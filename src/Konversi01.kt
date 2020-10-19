@@ -6,8 +6,12 @@ fun main(){
     println(hargaMotor)
 
     when(hargaMobil){
-        is Int -> print("Harga Mobil adalah Int")
-        !is Int -> print("Harga Mobil adalah Long")
+        is Int -> println("Harga Mobil adalah Int")
+        !is Int -> println("Harga Mobil adalah Long")
     }
+
+    var x = 3
+    x = x * 10
+    println("x bernilai $x")
 
 }
