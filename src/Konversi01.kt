@@ -6,6 +6,7 @@ fun main(){
     println(hargaMotor)
 
     when(hargaMobil){
+        // operator is seperti pertanyaan
         is Int -> println("Harga Mobil adalah Int")
         !is Int -> println("Harga Mobil adalah Long")
     }
