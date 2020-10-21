@@ -15,19 +15,15 @@ fun main() {
 
     if (lampuKu == "merah"){
         statusLampu = "Berhenti"
-        informasi
-        println("Warna lampu $lampuKu artinya Berhenti")
     } else if (lampuKu == "kuning") {
-        println("Warna lampu $lampuKu artinya Hati-Hati")
+        statusLampu = "Hati-Hati"
     } else if (lampuKu == "hijau") {
-        println("Warna lampu $lampuKu artinya Berjalan")
+        statusLampu = "Berjalan"
     } else if (lampuKu == ""){
-        println("Anda belum memasukkan warna lampu")
+        statusLampu = "Warna belum dimasukkan"
     } else {
-        println("Warna lampu $lampuKu tidak ditemukan")
+        statusLampu = "Warna tidak terdaftar"
     }
 
-    fun informasi(lampuKu: String, statusLampu: String){
-        println("Warna lampu $lampuKu artinya Berhenti")
-    }
+    println("Warna lampu $lampuKu = $statusLampu")
 }
