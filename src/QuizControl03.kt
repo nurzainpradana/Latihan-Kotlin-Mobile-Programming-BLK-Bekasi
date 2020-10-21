@@ -15,17 +15,17 @@ fun main() {
 
     //Input Nilai Teori
     print("Masukkan Nilai Teori: ")
-    var teoriKu: Float = isian.readLine().toFloat()
+    var teoriKu = isian.readLine().toDouble()
     // Nilai Teori 30%
-    teoriKu *= 0.3F
+    teoriKu *= 0.3
 
     println("-----------------------------------------------------------------")
 
     //Input Nilai Praktek
     print("Masukkan Nilai Praktek: ")
-    var praktekKu = isian.readLine().toFloat()
+    var praktekKu = isian.readLine().toDouble()
     // Nilai Praktek 70%
-    praktekKu *= 0.7F
+    praktekKu *= 0.7
 
     println("-----------------------------------------------------------------")
 
@@ -77,7 +77,7 @@ fun main() {
             keterangan = "Tidak Ditemukan"
         }
     }
-    println("Grade \t\t\t\t: $grade")
+    println("Grade \t\t\t\t\t: $grade")
     println("Keterangan \t\t\t\t: $keterangan")
 
     //Penentuan Kompeten
